@@ -35,7 +35,7 @@ struct Tipo_ContaCorrente cadConta[QTDECORRENTISTA]=
     "carlos@Gmail.com"},
     {222,"Marcos da Silva", {"R.Vic.Machado",333,"Batel","Curitiba","PR"},
     "marcos@gmail.com"},
-	{333,"jose da Silva", {"R.luiz Tramontin",2340,"Campo Comprido","Curitiba","PR"},
+    {333,"jose da Silva", {"R.luiz Tramontin",2340,"Campo Comprido","Curitiba","PR"},
     "jose@gmail.com"}};
     
 //Fim das definicoes de testes;    
@@ -157,7 +157,7 @@ void impUmaCC(int i){
 	printf("\nEndereco-Rua: %s",cadConta[i].stcEndereco.sRua);
 	printf("\nEndereco-Numero do Imovel: %d",cadConta[i].stcEndereco.iNum);
 	printf("\nEndereco-Bairro: %s",cadConta[i].stcEndereco.sBairro);
-    printf("\nEndereco-Cidade: %s",cadConta[i].stcEndereco.sCidade);
+        printf("\nEndereco-Cidade: %s",cadConta[i].stcEndereco.sCidade);
 	printf("\nEndereco-Estado: %s",cadConta[i].stcEndereco.sEstado);
 	printf("\nE-mail do Correntista %s",cadConta[i].sMail);
 }
@@ -211,9 +211,9 @@ int excluirContaCorrente(int iQtdeCC){
 
 void excluirCC(int i,int iQtdeCC){
 	for(;i<iQtdeCC;i++){
-		cadConta[i].iContaCorrente = cadConta[i+1].iContaCorrente;
-		cadConta[i].stcEndereco.iNum = cadConta[i+1].stcEndereco.iNum;
-		strcpy(cadConta[i].sNome, cadConta[i+1].sNome);
+	    cadConta[i].iContaCorrente = cadConta[i+1].iContaCorrente;
+	    cadConta[i].stcEndereco.iNum = cadConta[i+1].stcEndereco.iNum;
+	    strcpy(cadConta[i].sNome, cadConta[i+1].sNome);
 	    strcpy(cadConta[i].stcEndereco.sRua, cadConta[i+1].stcEndereco.sRua);
 	    strcpy(cadConta[i].stcEndereco.sBairro, cadConta[i+1].stcEndereco.sBairro);
 	    strcpy(cadConta[i].stcEndereco.sCidade, cadConta[i+1].stcEndereco.sCidade);
