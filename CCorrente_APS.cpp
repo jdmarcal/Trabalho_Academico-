@@ -73,7 +73,7 @@ int main(){
   			default:
 			  if (iOpcao != 4){
 			  	printf("\n\nOpcao Invalida\n\n");
-			    getch();
+			        getch();
 			  }
   	      } 
   	  }
